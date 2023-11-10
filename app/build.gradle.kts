@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.rimomo.proyecto2"
-    compileSdk = 33
+    namespace = "com.rimomo.ds42_practica_2"
+    compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.rimomo.proyecto2"
+        applicationId = "com.rimomo.ds42_practica_2"
         minSdk = 28
         targetSdk = 33
         versionCode = 1

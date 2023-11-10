@@ -2,32 +2,145 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/value"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="52dp"
-        android:layout_height="14dp"
-        android:text="nombre:"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.345"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.337" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="162dp"
-        android:layout_height="165dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#89AE5F"
+        android:text="Throws of craps"
+        android:textSize="28dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.503"
-        tools:srcCompat="@drawable/rambo" />
+         />
+
+
+    <Button
+        android:id="@+id/buttonThrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Throw"
+        app:layout_constraintTop_toBottomOf="@id/faces6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/face4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="6"
+        app:layout_constraintTop_toTopOf="@id/faces6"
+        app:layout_constraintBottom_toBottomOf="@id/faces6"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+
+    <EditText
+        android:id="@+id/InsertValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:hint="No. Craps"
+        android:inputType="text"
+        android:textColorHint="#454040"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toBottomOf="@id/tittle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+
+    <TextView
+        android:id="@+id/facesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Face Options:"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+
+        app:layout_constraintTop_toBottomOf="@id/InsertValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/faces8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintTop_toTopOf="@id/faces6"
+        app:layout_constraintBottom_toBottomOf="@id/faces6"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/faces6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:layout_marginTop="40sp"
+        app:layout_constraintTop_toBottomOf="@id/facesText"
+        app:layout_constraintEnd_toStartOf="@id/faces8"
+        app:layout_constraintStart_toEndOf="@id/face4"
+
+        />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textAlignment="center"
+        android:layout_marginBottom="80dp"
+        android:background="#43312D"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonThrow"/>
+
+    <TextView
+        android:id="@+id/Crap1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:hint="crap1"
+        android:layout_marginStart="50dp"
+        app:layout_constraintTop_toTopOf="@id/Crap2"
+        app:layout_constraintBottom_toBottomOf="@id/Crap2"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/Crap2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:hint="crap12"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@id/Crap1"
+        app:layout_constraintEnd_toStartOf="@id/Crap3"
+        app:layout_constraintTop_toBottomOf="@id/Result"
+
+        />
+
+    <TextView
+        android:id="@+id/Crap3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:hint="crap3"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Crap2"
+        app:layout_constraintBottom_toBottomOf="@id/Crap2"
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
