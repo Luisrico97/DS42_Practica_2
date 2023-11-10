@@ -1,4 +1,4 @@
-package com.rimomo.ds42_practica_2
+package com.rimomo.proyecto2
 
 import org.junit.Test
 
