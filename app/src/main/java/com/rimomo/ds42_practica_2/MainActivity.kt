@@ -43,16 +43,17 @@ class MainActivity : AppCompatActivity() {
                             }
                             button8 -> {
                                 result1.text = Random.nextInt(1, 9).toString()
-                                result2.visibility = View.VISIBLE
+
                             }
                             button12 -> {
                                 result1.text = Random.nextInt(1, 13).toString()
-                                result2.visibility = View.VISIBLE
+
                             }
                         }
                     }
 
                     2 -> {
+                        result2.visibility = View.VISIBLE
                         result3.visibility = View.INVISIBLE
 
                         when (selectedButton) {
@@ -72,7 +73,10 @@ class MainActivity : AppCompatActivity() {
                     }
 
                     3 -> {
+                        result3.visibility = View.VISIBLE
+                        result2.visibility = View.VISIBLE
                         when (selectedButton) {
+
                             button6 -> {
                                 result1.text = Random.nextInt(1, 7).toString()
                                 result2.text = Random.nextInt(1, 7).toString()

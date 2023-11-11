@@ -103,6 +103,7 @@
         android:layout_marginBottom="80dp"
         android:background="#43312D"
         android:textColor="@color/white"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
